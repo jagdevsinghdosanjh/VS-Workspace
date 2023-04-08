@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Attributes</title>
+</head>
+<body>
+    <img src="./lion-king-1.jpg"/>
+    <button OnClick="changeImage()">Change Image</button>
+    <script>
+        function changeImage(){
+            // document.querySelector('img').src='/lion-king-2.jpg';
+            hasAttribute(), getAttribute(),setAttribute()
+            console.log(document.querySelector('img').hasAttribute('src'));
+            console.log(document.querySelector('img').hasAttribute('alt'));
+    
+            console.log(document.querySelector('img').getAttribute('src'));
+            document.querySelector('img').setAttribute("src","./lion-king-2.jpg");
+        }
+    </script>
+</body>
+</html>

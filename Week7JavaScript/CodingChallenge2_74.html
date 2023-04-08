@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge 2_74</title>
+    <script>
+        var h2 = document.getElementsByClassName('header')
+        var p = document.getElementsByClassName('paragraph')
+        var div = document.getElementById('div')
+        for (var i = 0; i < p.length; i++) {
+            console.log(p[i]); p[i].innerText = "PARAGRAPH";
+        }
+        for (var i = 0; i < h2.length; i++) {
+            h2[i].innerText = "HEADING";
+        }
+        div.innerHTML = '<h1>This heading is inserted using JS CODE</h2>';
+    </script>
+</head>
+<body>
+    <hr>
+    <pre>Problem Statement:Description
+        1. Create a html page having some paragraph tag and some h2,h3 tags with some text inside 
+        them along with a div tag having id as ‘div’.
+        2. All h2,h3 have same  value of  className attribute i.e, “header”
+        3. All paragraphs tag have className attribute as “paragraph”.
+        4. Now print the content of all paragraph tag in the browser console.
+        5. And add a new h1 inside the div tag in html using js code.
+        6. And also change the text of all header tags  to “HEADINGS” and paragraph tags to 
+        “PARAGRAPH”.
+    </pre>
+    <hr>
+    <strong>Output Code of Code as directed above:</strong>
+    <h2 class="header">
+        This is demo h2 heading.We will use this element to perform various operation on it using
+        JS code.
+    </h2>
+    <h3 class="header">
+        This is demo h3 heading.We will use this element to perform various operation on it using
+        JS code.
+        </h3>
+        <p class="paragraph">This is the first demo paragraph.It has content to apply various js
+            operation on it.
+        </p>
+        <p class="paragraph">This is the second demo paragraph.It has content to apply various js
+            operation on it.
+        </p>
+        <div id="div">
+            This is a demo div.It doesn't have any futher childtags inside it till now.
+        </div>
+</body>
+</html>

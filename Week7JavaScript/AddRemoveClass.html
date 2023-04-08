@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Remove Class</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 24px;
+        }
+
+        .small {
+            font-size: 12px;
+        }
+
+        .p {
+            color: blue;
+        }
+    </style>
+    <script>
+        function DoChanges() {
+            document.getElementsByTagName('p')[0].classList.remove('p');
+            document.getElementsByTagName('p')[0].classList.add('big');
+            document.getElementsByTagName('p')[0].classList.add('red');
+        }
+
+        function ReverseChanges() {
+            document.getElementsByTagName('p')[0].classList.remove('red');
+            document.getElementsByTagName('p')[0].classList.add('small');
+            document.getElementsByTagName('p')[0].classList.add('p');
+        }
+    </script>
+
+</head>
+
+<body>
+    <p class="p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque et iste molestias, ratione ad dicta?
+        Blanditiis aliquid accusantium perferendis ipsa. Delectus, qui? Beatae nemo consequuntur, corporis
+        necessitatibus debitis temporibus!
+    </p>
+    <button onClick="DoChanges();">Do Changes</button>
+    <button onClick="ReverseChanges();">Reverse Changes</button>
+</body>
+
+</html>
